@@ -2,8 +2,10 @@
 ;UpdateCFG=0
 SendCFG=1		;Send CFG to touch IC when loading driver	
 SleepDisable=0
-PhysicalXsize=4096	;Physical size£¬the unit is 0.1mm
-PhysicalYsize=4096
+;PhysicalXsize=4096	;Physical sizeÂ£Â¬the unit is 0.1mm
+;PhysicalYsize=4096 ;Factory values that are nonsensical, causes a bug where the on-screen keyboard on the login screen is very small
+PhysicalXsize=1060	;Actual viewable area size, to the nearest 1mm since I used a tape measure and not calipers
+PhysicalYsize=1710
 
 [Support]
 ESD=1		;Driver supports ESD recovery processing
